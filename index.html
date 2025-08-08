@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Exercises</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'ts-blue': '#3178c6',
+              'ts-light': '#4d9aff'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <div id="app" class="min-h-screen flex items-center justify-center p-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Header -->
+        <div class="mb-8">
+          <h1 class="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-ts-blue to-ts-light bg-clip-text text-transparent">
+            🚀 TypeScript Exercises
+          </h1>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Learn TypeScript through practical exercises with modern testing and development tools
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <!-- Getting Started Card -->
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow">
+            <div class="text-3xl mb-4">📚</div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800">Getting Started</h3>
+            <p class="text-gray-600 mb-4">
+              Open your terminal and run the exercises with our modern development workflow
+            </p>
+            <div class="bg-gray-50 rounded-lg p-3 text-left">
+              <code class="text-sm text-ts-blue font-mono">npm install && npm test</code>
+            </div>
+          </div>
+
+          <!-- Development Card -->
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow">
+            <div class="text-3xl mb-4">⚡</div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800">Per-Exercise Workflow</h3>
+            <p class="text-gray-600 mb-4">
+              Work on individual exercises with focused commands
+            </p>
+            <div class="bg-gray-50 rounded-lg p-3 text-left">
+              <code class="text-sm text-ts-blue font-mono">npm run exo:verify 01</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features List -->
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 mb-8">
+          <h3 class="text-2xl font-semibold mb-6 text-gray-800">✨ What You'll Learn</h3>
+          <div class="grid md:grid-cols-3 gap-4 text-left">
+            <div class="flex items-start space-x-3">
+              <span class="text-green-500 text-xl">✓</span>
+              <div>
+                <strong class="text-gray-800">Type System</strong>
+                <p class="text-gray-600 text-sm">Interfaces, unions, guards</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <span class="text-green-500 text-xl">✓</span>
+              <div>
+                <strong class="text-gray-800">Advanced Types</strong>
+                <p class="text-gray-600 text-sm">Generics, conditional types</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <span class="text-green-500 text-xl">✓</span>
+              <div>
+                <strong class="text-gray-800">Utility Types</strong>
+                <p class="text-gray-600 text-sm">Partial, Omit, Pick, etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-gray-500 text-sm">
+          <p>Built with ⚡ <strong>Vite</strong> • 🧪 <strong>Vitest</strong> • 💙 <strong>TypeScript</strong></p>
+          <p class="mt-2">
+            Based on <a href="https://typescript-exercises.github.io/" class="text-ts-blue hover:underline" target="_blank" rel="noopener">typescript-exercises.github.io</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
